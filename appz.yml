@@ -11,7 +11,7 @@ build:
     image_template: alertmanager-0.20
 
 deploy:
-    context: alpha/DEV
+    context: arjun-cc/DEV
     type: statefulset
     replicas: 1
     port:
@@ -27,5 +27,5 @@ properties:
     SLACK_API_URL:
       vault: SLACK_API_URL
     SLACK_CHANNEL: notification-openebs
-    CLUSTER_NAME: AWS_QA
-    revision : 19
+    CLUSTER_NAME: Muthoot-POC
+    revision : 1
